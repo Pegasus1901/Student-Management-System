@@ -2,7 +2,7 @@
 require("../config.php");
 if(!isset($_SESSION['lid']))
 {
-	header("location:index.php?ashish".sha1('ashishlabde'));
+	header("location:index.php?yash".sha1('yashlabde'));
 }
 $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '".$_SESSION['lid']."'"));
 ?>
@@ -92,7 +92,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <hr />
 <br>
 <!-- ------------------------------------------------------------------------------------------------------- -->
-<?php if($_GET['ashish'] == sha1('error'))
+<?php if($_GET['yash'] == sha1('error'))
 {
 	?>
 <span class="Text">N O T I F I C A T I O N</span>
@@ -100,7 +100,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <br>
 <span class="flashFalse"> Error Updating Information </span>
 <br>
-<?php }elseif($_GET['ashish'] == sha1('success'))
+<?php }elseif($_GET['yash'] == sha1('success'))
 {
 	?> 
 <span class="Text">N O T I F I C A T I O N</span>
@@ -137,8 +137,8 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <!-- ------------------------------------------------------------------------------------------------------- -->
 <br>
 
-<input type="button" value="Edit Information" onClick="window.location='home.php?ashish=<?php echo sha1('edit');?>'" />
-<input type="button" value="Change Password" onClick="window.location='home.php?ashish=<?php echo sha1('changePassword');?>'" />
+<input type="button" value="Edit Information" onClick="window.location='home.php?yash=<?php echo sha1('edit');?>'" />
+<input type="button" value="Change Password" onClick="window.location='home.php?yash=<?php echo sha1('changePassword');?>'" />
 <br>
 <br>
 
@@ -147,7 +147,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <br>
 <br>
 <?php 
-if($_GET['ashish'] == sha1('edit'))
+if($_GET['yash'] == sha1('edit'))
 {
 	?>
 <div id="content">
@@ -167,7 +167,7 @@ while($x = mysqli_fetch_array($em))
         <?php } ?>
 <br>
 <br>
-<input type="hidden" name="ashish" value="<?php echo sha1('editing');?>" />
+<input type="hidden" name="yash" value="<?php echo sha1('editing');?>" />
 </select>
 <input type="submit" value="VIEW" />
 </form>
@@ -175,13 +175,13 @@ while($x = mysqli_fetch_array($em))
 <br>
 </div>
 <?php } 
-elseif($_GET['ashish'] == sha1('editing'))
+elseif($_GET['yash'] == sha1('editing'))
 {
 	$r = mysqli_query($al, "SELECT * FROM students WHERE email = '".$_GET['email']."'");
 	$e = mysqli_fetch_array($r);
 	if(!mysqli_num_rows($r) == 1)
 	{
-	 	header("location:home.php?ashish=".sha1('error'));
+	 	header("location:home.php?yash=".sha1('error'));
 	}
 ?>
 <div id="content">
@@ -334,7 +334,7 @@ JEE
 <br>
 
 <?php } 
-if($_GET['ashish'] == sha1('changePassword'))
+if($_GET['yash'] == sha1('changePassword'))
 {
 	
 ?>
@@ -344,7 +344,7 @@ if($_GET['ashish'] == sha1('changePassword'))
 <br>
 <hr />
 <br>
-<form method="post" action="changePassword.php?ashish=<?php echo sha1('ashish').sha1('vegan').sha1('forever');?>">
+<form method="post" action="changePassword.php?yash=<?php echo sha1('yash').sha1('vegan').sha1('forever');?>">
 <input type="password" placeholder="Current Password" title="Enter Current Password" size="40" required name="p1" />
 <br>
 <br>

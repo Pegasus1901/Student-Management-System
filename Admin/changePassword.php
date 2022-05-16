@@ -2,7 +2,7 @@
 require("../config.php");
 if(!isset($_SESSION['lid']))
 {
-	header("location:index.php?ashish".sha1('ashishlabde'));
+	header("location:index.php?yash".sha1('yashlabde'));
 }
 $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '".$_SESSION['lid']."'"));
 if($v['password'] == sha1($_POST['p1']))
@@ -14,11 +14,11 @@ if($v['password'] == sha1($_POST['p1']))
 	}
 	else
 	{
-		header("location:home.php?ashish=".sha1('changePassword')."&msg=".sha1('1'));
+		header("location:home.php?yash=".sha1('changePassword')."&msg=".sha1('1'));
 	}
 }
 else
 {
-	header("location:home.php?ashish=".sha1('changePassword')."&msg=".sha1('2'));
+	header("location:home.php?yash=".sha1('changePassword')."&msg=".sha1('2'));
 }
 ?>

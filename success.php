@@ -19,7 +19,7 @@ require("config.php");
 </head>
 <body>
 <div id="header" align="center">
-<span class="heading">BAPURAO DESHMUKH COLLEGE OF ENGINEERING, SEVAGRAM (WARDHA)</span>
+<span class="heading">JSPM's Imperial College Of Engineering and Research</span>
 </div>
 <br>
 <br>
@@ -59,13 +59,5 @@ require("config.php");
 <br>
 <?php require("footer.php");?>
 </body>
-<!-- Designed & Developed by Tech Vegan https://bit.ly/2MFT35Q 
-		NOT FOR SELLING PURPOSE
-
-        CAN USE FOR COLLEGE/SCHOOL PROJECT SUBMISSION
-       
-        For More Subscribe YouTube Channel "Tech Vegan" https://bit.ly/2MFT35Q
-        
-        DESIGNED WITH LOVE FOR ALL
---> </html>
+</html>
 

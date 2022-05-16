@@ -14,7 +14,7 @@
 <title>Untitled Document</title>
 <script>
 
-    function Ashish(a) {
+    function Yash(a) {
 		var x = a.n1.value;
 		var y = a.n2.value;
 		var per = (x/y)*100;
@@ -26,7 +26,7 @@
 
 <body>
 <form method="post" action="">
-<input type="text" name="n1" id="n1" size="5"> / <input type="text" name="n2" id="n2" size="5"> = <input type="text" name="n3" id="n3" size="5" onFocus="Ashish(this.form)">
+<input type="text" name="n1" id="n1" size="5"> / <input type="text" name="n2" id="n2" size="5"> = <input type="text" name="n3" id="n3" size="5" onFocus="Yash(this.form)">
 
 </form>
 </body>

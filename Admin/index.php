@@ -2,7 +2,7 @@
 require("../config.php");
 if(isset($_SESSION['lid']))
 {
-	header("location:home.php?ashish".sha1('ashishlabde'));
+	header("location:home.php?yash".sha1('yashlabde'));
 }
 $flag = 1;
 if(!empty($_POST))
@@ -11,7 +11,7 @@ if(!empty($_POST))
 	if(mysqli_num_rows($sql) == 1)
 	{
 		$_SESSION['lid'] = $_POST['lid'];
-		header("location:home.php?ashish=".sha1('ashishlabde'));
+		header("location:home.php?yash=".sha1('yashlabde'));
 	}
 	else
 	{

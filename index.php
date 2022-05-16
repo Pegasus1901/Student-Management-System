@@ -51,16 +51,16 @@ if(!empty($_POST))
 	
 	if(!$sql)
 	{ 
-		header("location:index.php?ashish=".sha1('error')); 
+		header("location:index.php?yash=".sha1('error')); 
 	} 
 	else 
 	{  
 		session_destroy();
-		header("location:success.php?ashish=".sha1('success'));
+		header("location:success.php?yash=".sha1('success'));
 	}
 }
 
-if($_GET['ashish'] == sha1('error'))
+if($_GET['yash'] == sha1('error'))
 {
 	$flag = 0;
 }

@@ -15,15 +15,15 @@ if(!empty($_POST))
 	
 	if(!$sql)
 	{ 
-		header("location:home.php?ashish=".sha1('error')); 
+		header("location:home.php?yash=".sha1('error')); 
 	} 
 	else 
 	{  
-		header("location:home.php?ashish=".sha1('success'));
+		header("location:home.php?yash=".sha1('success'));
 	}
 }
 
-if($_GET['ashish'] == sha1('error'))
+if($_GET['yash'] == sha1('error'))
 {
 	$flag = 0;
 }

@@ -1,13 +1,4 @@
 <!doctype html>
-<!-- Designed & Developed by Tech Vegan https://bit.ly/2MFT35Q 
-		NOT FOR SELLING PURPOSE
-
-        CAN USE FOR COLLEGE/SCHOOL PROJECT SUBMISSION
-       
-        For More Subscribe YouTube Channel "Tech Vegan" https://bit.ly/2MFT35Q
-        
-        DESIGNED WITH LOVE FOR ALL
--->
 <html>
 <head>
 <meta charset="utf-8">

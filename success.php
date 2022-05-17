@@ -15,7 +15,7 @@ require("config.php");
 <head>
 <meta charset="utf-8">
 <title>First Year Information Portal</title>
-<link href="ashishlabde.css" rel="stylesheet" type="text/css">
+<link href="mainCSSFile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="header" align="center">

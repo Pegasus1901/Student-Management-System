@@ -7,21 +7,12 @@ if(!isset($_SESSION['lid']))
 $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '".$_SESSION['lid']."'"));
 ?>
 <!doctype html>
-<!-- Designed & Developed by Tech Vegan https://bit.ly/2MFT35Q 
-		NOT FOR SELLING PURPOSE
-
-        CAN USE FOR COLLEGE/SCHOOL PROJECT SUBMISSION
-       
-        For More Subscribe YouTube Channel "Tech Vegan" https://bit.ly/2MFT35Q
-        
-        DESIGNED WITH LOVE FOR ALL
--->
 <html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="refresh" content="600; url=logout.php" />
-<title>First Year Information Portal</title>
-<link href="../ashishlabde.css" rel="stylesheet" type="text/css">
+<title>Student Information Portal</title>
+<link href="../mainCSSFile.css" rel="stylesheet" type="text/css">
 <script>
 
     function Address(f) {
@@ -60,7 +51,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 </head>
 <body>
 <div id="header" align="center">
-<span class="heading">TECH VEGAN (COLLEGE NAME)</span>
+<span class="heading">JSPM's Imperial College Of Engineering and Research</span>
 </div>
 <br>
 <br>
@@ -76,7 +67,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <div id="content">
 <br>
 
-<span class="subHead">FIRST YEAR STUDENT INFORMATION REGISTRATION PANEL</span>
+<span class="subHead" style="textColor: black">FIRST YEAR STUDENT INFORMATION REGISTRATION PANEL</span>
 <br>
 <br>
 <hr />
@@ -111,7 +102,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <br>
 <?php }elseif($_GET['ashish'] == sha1('success'))
 {
-	?>
+	?> 
 <span class="Text">N O T I F I C A T I O N</span>
 <hr />
 <br>
@@ -123,7 +114,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <span class="Text">N O T I F I C A T I O N</span>
 <hr />
 <br>
-<span class="flashFalse"> Ner Passwords Doesn't Matched </span>
+<span class="flashFalse"> Passwords Doesn't Matched </span>
 <br>
 <?php }elseif($_GET['msg'] == sha1('2'))
 {
@@ -329,7 +320,7 @@ JEE
 <br>
 <br>
 <input type="hidden" name="id" value="<?php echo $e['id'];?>">
-<input type="submit" value="SAVE" onClick="return confirm('Are You Sure..?')" /> 
+<input type="submit" value="SAVE" onClick="return confirm('Confirm Submit')" /> 
 
 </span>
 </form>
@@ -379,13 +370,5 @@ if($_GET['ashish'] == sha1('changePassword'))
 <br>
 <?php require("footer.php");?>
 </body>
-<!-- Designed & Developed by Tech Vegan https://bit.ly/2MFT35Q 
-		NOT FOR SELLING PURPOSE
-
-        CAN USE FOR COLLEGE/SCHOOL PROJECT SUBMISSION
-       
-        For More Subscribe YouTube Channel "Tech Vegan" https://bit.ly/2MFT35Q
-        
-        DESIGNED WITH LOVE FOR ALL
---> </html>
+</html>
 

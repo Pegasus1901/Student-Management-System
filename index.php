@@ -67,20 +67,11 @@ if($_GET['ashish'] == sha1('error'))
 
 ?>
 <!doctype html>
-<!-- Designed & Developed by Tech Vegan https://bit.ly/2MFT35Q 
-		NOT FOR SELLING PURPOSE
-
-        CAN USE FOR COLLEGE/SCHOOL PROJECT SUBMISSION
-       
-        For More Subscribe YouTube Channel "Tech Vegan" https://bit.ly/2MFT35Q
-        
-        DESIGNED WITH LOVE FOR ALL
--->
 <html>
 <head>
 <meta charset="utf-8">
 <title>First Year Information Portal</title>
-<link href="ashishlabde.css" rel="stylesheet" type="text/css">
+<link href="mainCSSFile.css" rel="stylesheet" type="text/css">
 <script>
 
     function Address(f) {
@@ -119,7 +110,7 @@ if($_GET['ashish'] == sha1('error'))
 </head>
 <body>
 <div id="header" align="center">
-<span class="heading">TECH VEGAN (COLLEGE NAME)</span>
+<span class="heading">JSPM's Imperial College Of Engineering and Research</span>
 </div>
 <br>
 <br>

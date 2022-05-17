@@ -9,7 +9,7 @@ if($v['password'] == sha1($_POST['p1']))
 {
 	if($_POST['p2'] == $_POST['p3'])
 	{
-		mysqli_query($al, "UPDATE admin SET password = '".sha1($_POST['p1'])."' WHERE loginid = '".$_SESSION['lid']."'");
+		mysqli_query($al, "UPDATE admin SET password = '".sha1($_POST['p2'])."' WHERE loginid = '".$_SESSION['lid']."'");
 		header("location:home.php?msg=".sha1('3'));
 	}
 	else

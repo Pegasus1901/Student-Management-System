@@ -10,7 +10,7 @@ require("config.php");
 </head>
 <body>
 <div id="header" align="center">
-<span class="heading">BAPURAO DESHMUKH COLLEGE OF ENGINEERING, SEVAGRAM (WARDHA)</span>
+<span class="heading">JSPM's Imperial College Of Engineering and Research</span>
 </div>
 <br>
 <br>

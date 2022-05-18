@@ -74,23 +74,6 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <span class="Text">Welcome <span style="color:rgba(124,245,39,1.00);"><?php echo $v['name'];?></span></span>
 <hr />
 <br>
-<form method="post" action="export.php">
-<select name="branch" required title="Select Branch">
-<option value="NA" selected disabled > ~ ~ Branch ~ ~</option>
-<option value="Computer Engineering">Computer Engineering</option>
-<option value="Civil Engineering">Civil Engineering</option>
-<option value="Electronics and Tele-Comm. Engineering">Electronics &amp; Tele-Comm. Engineering</option>
-<option value="Electronics and Power Engineering">Electronics &amp; Power Engineering</option>
-<option value="Mechanical Engineering">Mechanical Engineering</option>
-</select>
-<br>
-<br>
-
-<input type="submit" value="Export Information" />
-</form>
-<br>
-<hr />
-<br>
 <!-- ------------------------------------------------------------------------------------------------------- -->
 <?php if($_GET['yash'] == sha1('error'))
 {
@@ -137,7 +120,7 @@ $v = mysqli_fetch_array(mysqli_query($al, "SELECT * FROM admin WHERE loginid = '
 <!-- ------------------------------------------------------------------------------------------------------- -->
 <br>
 
-<input type="button" value="Edit Information" onClick="window.location='home.php?yash=<?php echo sha1('edit');?>'" />
+<input type="button" value="View And Edit Information" onClick="window.location='home.php?yash=<?php echo sha1('edit');?>'" />
 <input type="button" value="Change Password" onClick="window.location='home.php?yash=<?php echo sha1('changePassword');?>'" />
 <br>
 <br>
@@ -186,7 +169,7 @@ elseif($_GET['yash'] == sha1('editing'))
 ?>
 <div id="content">
 <br>
-<span class="subHead">EDIT INFORMATION [ <span style="color:rgba(124,245,39,1.00);"><?php echo $_GET['email'];?></span> ]
+<span class="subHead">VIEW AND EDIT INFORMATION [ <span style="color:rgba(124,245,39,1.00);"><?php echo $_GET['email'];?></span> ]
 <br>
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------- -->

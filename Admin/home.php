@@ -205,7 +205,7 @@ elseif($_GET['yash'] == sha1('editing'))
 <br>
 <br>
 <input type="date" name="dob" title="Enter Date of Birth" placeholder="Date of Birth" required value="<?php echo $e['date_of_birth'];?>" /> <br>
-<span class="Text">Eg. 31/12/2017</span>
+<span class="Text">Eg. 10/03/2021</span>
 <br>
 <br>
 <input type="text" name="mob" title="Enter Contact No." placeholder="Contact Number" size="30" required maxlength="10" value="<?php echo $e['contact_no'];?>" />

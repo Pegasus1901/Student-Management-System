@@ -9,22 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Database: `student_info`
---
-
 -- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
 
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
@@ -34,18 +19,12 @@ CREATE TABLE IF NOT EXISTS `admin` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
---
--- Dumping data for table `admin`
---
+
 
 INSERT INTO `admin` (`id`, `loginid`, `name`, `password`) VALUES
 (1, 'techvegan', 'Tech Vegan', '534fc3dc50b1573791f6e96d62f18e0280ab4367');
 
 -- --------------------------------------------------------
-
---
--- Table structure for table `students`
---
 
 CREATE TABLE IF NOT EXISTS `students` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
@@ -86,7 +65,3 @@ CREATE TABLE IF NOT EXISTS `students` (
   UNIQUE KEY `adhaar_no` (`adhaar_no`),
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

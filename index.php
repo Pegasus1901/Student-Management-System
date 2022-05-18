@@ -101,8 +101,8 @@ if($_GET['yash'] == sha1('error'))
 		var x = b.hssc_mo.value;
 		var y = b.hssc_to.value;
 		var per = (x/y)*100;
-		var perr = parseFloat(per).toFixed( 2 );
-		b.hssc_per.value = perr;	
+		var perrs = parseFloat(per).toFixed( 2 );
+		b.hssc_per.value = perrs;	
 		
 	}
 

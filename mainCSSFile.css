@@ -1,20 +1,9 @@
 @charset "utf-8";
 
-/* CSS Document */
 body {
 	margin: 0px;
-
-	/* background: rgba(98,125,77,1);
-background: -moz-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
-background: -webkit-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: -o-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: -ms-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%); */
 	background: rgb(255, 252, 15);
 	background: linear-gradient(90deg, rgba(255, 252, 15, 0.9699230033810399) 25%, rgba(42, 241, 48, 0.9475140397956058) 100%);
-	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1); */
-
 }
 
 @font-face {
@@ -84,18 +73,8 @@ background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%
 
 #content {
 	height: auto;
-
-	/* background: rgba(98,125,77,1);
-background: -moz-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
-background: -webkit-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: -o-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: -ms-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
-background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%); */
 background: rgb(255,50,15);
 background: linear-gradient(52deg, rgba(255,50,15,0.9699230033810399) 25%, rgba(56,35,165,1) 64%);
-/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1); */
-
 	width: 800px;
 	border-radius: 7px;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 1.00);

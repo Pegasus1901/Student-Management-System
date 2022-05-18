@@ -206,6 +206,7 @@ if($_GET['yash'] == sha1('error'))
 <option value="2018-2019">2018-2019</option>
 <option value="2019-2020">2019-2020</option>
 <option value="2020-2021">2020-2021</option>
+<option value="2020-2021">2021-2022</option>
 </select>
 
 <select name="year" required title="Select Year">
